@@ -1,0 +1,374 @@
+$date
+	Fri May 02 22:51:42 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module electronic_lock_tb $end
+$var wire 1 ! unlock $end
+$var wire 7 " state_out [6:0] $end
+$var wire 1 # clrtimer $end
+$var wire 1 $ clrcntr $end
+$var reg 1 % clk $end
+$var reg 1 & error $end
+$var reg 4 ' key [3:0] $end
+$var reg 1 ( locked $end
+$var reg 1 ) pushed $end
+$var reg 1 * rst $end
+$var reg 1 + waitdone $end
+$scope function state_name $end
+$var reg 7 , s [6:0] $end
+$upscope $end
+$scope module dut $end
+$var wire 1 % clk $end
+$var wire 1 & error $end
+$var wire 4 - key [3:0] $end
+$var wire 1 ( locked $end
+$var wire 1 ) pushed $end
+$var wire 1 * rst $end
+$var wire 7 . state_out [6:0] $end
+$var wire 1 + waitdone $end
+$var reg 1 $ clrcntr $end
+$var reg 1 # clrtimer $end
+$var reg 2 / ecnt [1:0] $end
+$var reg 7 0 next_state [6:0] $end
+$var reg 7 1 state [6:0] $end
+$var reg 1 ! unlock $end
+$upscope $end
+$scope task send_key $end
+$var reg 4 2 k [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx 2
+b1000000 1
+b1000000 0
+b0 /
+b1000000 .
+b0 -
+bx ,
+0+
+1*
+0)
+0(
+b0 '
+0&
+0%
+0$
+0#
+b1000000 "
+0!
+$end
+#5
+1%
+#10
+0%
+#15
+1%
+#20
+b1 0
+0%
+b1000000 ,
+b111 '
+b111 -
+1)
+b111 2
+0*
+#25
+b10 0
+b1 "
+b1 .
+b1 1
+1%
+#30
+b10 0
+0%
+b1 ,
+0)
+#35
+b10000 0
+b10 "
+b10 .
+b10 1
+1%
+#40
+b100 0
+0%
+b10 ,
+b1000 '
+b1000 -
+1)
+b1000 2
+#45
+b10000 0
+b100 "
+b100 .
+b100 1
+1%
+#50
+b10000 0
+0%
+b100 ,
+0)
+#55
+b1 0
+b1 /
+b10000 "
+b10000 .
+b10000 1
+1%
+#60
+b10 /
+b1 0
+0%
+b10000 ,
+b1001 '
+b1001 -
+1)
+b1001 2
+#65
+b10000 0
+b1 "
+b1 .
+b1 1
+1%
+#70
+b10000 0
+0%
+b1 ,
+0)
+#75
+b100000 0
+b11 /
+b10000 "
+b10000 .
+b10000 1
+1%
+#80
+b0 /
+b1 0
+0%
+b10000 ,
+b1 '
+b1 -
+1)
+b1 2
+#85
+b10000 0
+b1 "
+b1 .
+b1 1
+1%
+#90
+b10000 0
+0%
+b1 ,
+0)
+#95
+b1 0
+b1 /
+b10000 "
+b10000 .
+b10000 1
+1%
+#100
+b10 /
+b1 0
+0%
+b10000 ,
+b100 '
+b100 -
+1)
+b100 2
+#105
+b10000 0
+b1 "
+b1 .
+b1 1
+1%
+#110
+b10000 0
+0%
+b1 ,
+0)
+#115
+b100000 0
+b11 /
+b10000 "
+b10000 .
+b10000 1
+1%
+#120
+b0 /
+b1 0
+0%
+b10000 ,
+b10 '
+b10 -
+1)
+b10 2
+#125
+b10000 0
+b1 "
+b1 .
+b1 1
+1%
+#130
+b10000 0
+0%
+b1 ,
+0)
+#135
+b1 0
+b1 /
+b10000 "
+b10000 .
+b10000 1
+1%
+#140
+b10 /
+b1 0
+0%
+b111 '
+b111 -
+1)
+b111 2
+b10000 ,
+#145
+b10 0
+b1 "
+b1 .
+b1 1
+1%
+#150
+b10 0
+0%
+b1 ,
+0)
+#155
+b10000 0
+b10 "
+b10 .
+b10 1
+1%
+#160
+b10000 0
+0%
+1+
+#165
+b100000 0
+b11 /
+b10000 "
+b10000 .
+b10000 1
+1%
+#170
+b0 /
+b1 0
+0%
+b10000 ,
+1)
+0+
+#175
+b10 0
+b1 "
+b1 .
+b1 1
+1%
+#180
+b10 0
+0%
+b1 ,
+0)
+#185
+b10000 0
+b10 "
+b10 .
+b10 1
+1%
+#190
+b100 0
+0%
+b10 ,
+b1000 '
+b1000 -
+1)
+b1000 2
+#195
+b10000 0
+b100 "
+b100 .
+b100 1
+1%
+#200
+b10000 0
+0%
+b100 ,
+0)
+#205
+b1 0
+b1 /
+b10000 "
+b10000 .
+b10000 1
+1%
+#210
+b10 /
+b1 0
+0%
+b10000 ,
+b1001 '
+b1001 -
+1)
+b1001 2
+#215
+b10000 0
+b1 "
+b1 .
+b1 1
+1%
+#220
+b10000 0
+0%
+b1 ,
+0)
+#225
+b100000 0
+b11 /
+b10000 "
+b10000 .
+b10000 1
+1%
+#230
+0%
+#235
+b100000 "
+b100000 .
+b100000 1
+1%
+#240
+0%
+#245
+1%
+#250
+0%
+#255
+1%
+#260
+0%
+#265
+1%
+#270
+0%
+#275
+1%
+#280
+0%
